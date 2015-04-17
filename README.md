@@ -1,4 +1,4 @@
-# alculator
+# Calculator
 
 An experiment using javascript to create a simple Calculator. Give it a try!
 

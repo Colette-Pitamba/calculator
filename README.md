@@ -1,6 +1,6 @@
 # alculator
 
-An experiment using javascript to create simple Calculator. Give it a try!
+An experiment using javascript to create a simple Calculator. Give it a try!
 
 ### Credits:
 

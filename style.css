@@ -1,0 +1,163 @@
+/*--------------------------Resets----------------------------------------*/
+ 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+ 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+p {
+  margin: 0;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="text"],
+input[type="file"]::-webkit-file-upload-button, 
+button {
+  border: 1px solid #dbdbdb;
+  -webkit-appearance:none;
+  -webkit-border-radius: 0;
+  cursor: default;
+  float: left;
+  outline: none;
+  padding: 0;
+}
+
+/*--------------------------Calculator----------------------------------------*/
+
+body, html {
+  background-color: #dbdbdb;
+  height: 100%;
+  position: relative;
+}
+
+input[type="button"] {
+  background-color: #ffffff; 
+  height: 97px;
+  width: 97px;
+}
+
+input[type="button"],
+input[type="text"] {
+  font-family: "Apercu Mono Regular", 'Andale Mono', monospace;
+  font-size: 36px;
+  font-size-adjust:0.5;
+  font-style:normal; 
+  font-weight:normal;
+}
+
+input[name="equal"] {
+  background-color: #000000;
+  color: #ffffff;
+  height: 194px;
+  float: right;
+}
+
+input[name="period"] {
+  padding-bottom: 27px;
+}
+
+input[type="text"] {
+  color: #c73b0f;
+  height: 146px;
+  padding-right: 39px;
+  text-align: right;
+  width: 100%;
+} 
+
+input[name="zero"] {
+  text-align: center;
+  width: 194px;
+}
+
+.form_wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 388px;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+ /*--------------------------Clear Floats----------------------------------------*/
+
+ .cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/*--------------------------Media Querie----------------------------------------*/
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px) {
+
+  .form_wrapper {
+    width: 320px;
+  }
+
+  input[type="button"] {
+    height: 80px;
+    width: 80px;
+  }
+
+  input[name="equal"] {
+    height: 160px;
+  }
+
+  input[type="text"] {
+    height: 90px;
+  }
+
+  input[name="zero"] {
+    width: 160px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (device-aspect-ratio: 40/71) {
+  
+  .form_wrapper {
+    width: 252px;
+  }
+
+  input[type="button"] {
+    height: 63px;
+    width: 63px;
+  }
+
+  input[name="equal"] {
+    height: 126px;
+  }
+
+  input[name="zero"] {
+    width: 126px;
+  }
+}
+
+
+

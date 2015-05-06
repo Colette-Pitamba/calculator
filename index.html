@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minimal Calculator</title>
+	<link rel="stylesheet" href="normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="cf form_wrapper">
+		<form name="frm">
+			<input id="display" type="text" name="result" placeholder="0">
+			<input type="button" name="gone" value="C" onClick="runClear()">
+			<input type="button" name="percentage" value="&#37;" onClick="percent()">
+			<input type="button" name="division" value="&#247;" onClick="divide()">
+			<input type="button" name="multiplication" value="&times;" onClick="multiply()">
+
+			<input type="button" name="3" value="7" onClick="num(this)">
+			<input type="button" name="4" value="8" onClick="num(this)">
+			<input type="button" name="3" value="9" onClick="num(this)">
+			<input type="button" name="subtraction" value="&#45;" onClick="subtract()">
+
+			<input type="button" name="4" value="4" onClick="num(this)">
+			<input type="button" name="1" value="5" onClick="num(this)">
+			<input type="button" name="2" value="6" onClick="num(this)">
+			<input type="button" name="add" value="&#43;" onClick="addition()">
+
+			<input type="button" name="1" value="1" onClick="num(this)">
+			<input type="button" name="2" value="2" onClick="num(this)">
+			<input type="button" name="3" value="3" onClick="num(this)">
+			
+			<input class="cf" type="button" name="equal" value="=" onClick="sum()">
+			<input class="cf" type="button" name="zero" value="0" onClick="num(this)">
+			<input class="cf" type="button" name="period" value="&#46;" onClick="dot()">
+		</form>
+	</div><!-- end .form_wrapper -->
+
+	<script type="text/javascript">
+		WebFontConfig = { fontdeck: { id: '47224' } };
+
+		(function() {
+		  var wf = document.createElement('script');
+		  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		  wf.type = 'text/javascript';
+		  wf.async = 'true';
+		  var s = document.getElementsByTagName('script')[0];
+		  s.parentNode.insertBefore(wf, s);
+		})();
+	</script>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
